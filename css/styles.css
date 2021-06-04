@@ -1,0 +1,442 @@
+@font-face {
+	font-family: FavoritPro;
+	src: url(../fonts/FavoritPro/FavoritPro-Regular.otf);
+}
+
+@font-face {
+	font-family: FavoritProLight;
+	src: url(../fonts/FavoritPro/FavoritPro-Light.otf);
+}
+
+@font-face {
+	font-family: Werena;
+	src: url(../fonts/Wremena/Wremena\ Regular.otf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* HEADER */
+#mainHeader {
+    background: url(../images/header.png);
+    background-size: 100%;
+}
+
+.logo a {
+    float: left;
+    width: 80px;
+    margin-top: 15px;
+}
+
+.logoMobile {
+    display: none;
+}
+
+.headerTitle {
+    display: block;
+    padding-top: 269px;
+    font-family: FavoritPro;
+    color: #fff;
+    width: 670px;
+    font-size: 64px;
+}
+
+.mainHeaderRectangle {
+    display: flex;
+    margin-top: 20px;
+    background: #44FBA3;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.headerRectangle {
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.rectangleNumber {
+    font-size: 55px;
+}
+
+.rectangleTitle {
+    margin-left: 10px;
+    font-size: 21px;
+    font-family: Werena;
+}
+
+.headerArrow {
+    margin-top: 45px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+}
+
+/* CONTENT CONTAINER */
+#contentContainer {
+    position: absolute;
+    width: 1349px;
+    margin: 0 auto;
+}
+
+/* MAIN SIDEBAR */
+#sidebar {
+    position: absolute;
+    float: left;
+    height: 100%;
+    width: 367px;
+    background: #44FBA3;
+    padding-left: 75px;
+}
+
+.logoBlack {
+    margin: 15px 0 0 0;
+    width: 80px;
+}
+
+.sidebarTitle {
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-family: FavoritPro;
+    margin-top: 95px;
+    font-weight: bold;
+}
+
+.sidebarDescription {
+    width: 225px;
+}
+
+.sidebarDescription span {
+    display: block;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: FavoritProLight;
+    color: black;
+    line-height: 1.4;
+}
+
+/* MAIN CONTENT*/
+#mainContent {
+    float: right;
+    width: 982px;
+}
+
+.mainButtonContainer {
+    float: right;
+}
+
+.mainButton {
+    border: 1px solid #44FBA3;
+    border-radius: 80px;
+    padding: 12px 25px;
+    background: none;
+    cursor: pointer;
+}
+.mainButton:hover {
+    box-shadow: 0px 2px 5px 0 rgb(0 0 0 / 40%);
+    transition: all .2s ease-out;
+}
+
+.mainButton span {
+    font-family: FavoritPro;
+    font-size: 14px;
+}
+
+.textContent {
+    display: block;
+    padding: 120px 140px 0 120px;
+}
+
+.textContentTitle {
+    color: black;
+    width: 420px;
+    font-family: FavoritPro;
+    font-size: 40px;
+}
+
+.textDescription > a {
+    color: #0047FF;
+    text-decoration: none;
+}
+
+.textDescription {
+    margin-top: 27px;
+    font-family: FavoritProLight;
+    font-size: 18px;
+    width: 570px;
+    line-height: 1.4;
+}
+
+.textContentTitleMini {
+    color: black;
+    width: 360px;
+    font-family: FavoritPro;
+    font-size: 24px;
+    margin-top: 50px;
+}
+#text {
+    background: #fff;
+    padding: 10px 40px 250px 40px;
+    overflow: auto;
+    width: 100%;
+}
+/* CASE */
+
+#case {
+    background: #F4E4ED;
+    padding: 10px 40px 120px 40px;
+    overflow: auto;
+    width: 100%;
+}
+
+.mainCaseContainer {
+    display: block;
+}
+
+.mainCaseContainer > a {
+    text-decoration: none;
+}
+
+.caseBlock:nth-child(2) {
+    float: right;
+}
+
+.caseBlock {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.caseBlockBackground {
+    display: block;
+    background: #C4C4C4;
+    width: 400px;
+    height: 400px;
+}
+
+.caseBlockTitle {
+    display: block;
+    margin-top: 20px;
+    color: black;
+    width: 260px;
+    font-family: FavoritPro;
+    font-size: 24px;
+}
+
+/*  MADIA */
+@media screen and (max-width: 480px) {
+
+	.container {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+    /* HEADER */
+    #mainHeader {
+        background: url(../images/header.png) top no-repeat;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logoMobile {
+        display: block;
+        padding: 15px;
+    }
+
+    .logoMobileImage {
+        float: left;
+        width: 40px;
+        margin-top: 10px;
+    }
+
+    .mainButtonMobileContainer {
+        float: right;
+    }
+    
+    .mainButtonMobile {
+        border: 1px solid #fff;
+        color: white;
+        border-radius: 80px;
+        padding: 1em 2em;
+        background: none;
+        cursor: pointer;
+    }
+
+    .mainButtonMobile:hover {
+        box-shadow: 0px 2px 5px 0 rgb(0 0 0 / 40%);
+        transition: all .2s ease-out;
+    }
+    
+    .mainButtonMobile span {
+        font-family: FavoritPro;
+        font-size: .85rem;
+    }
+
+    .headerTitle {
+        display: block;
+        padding-top: 5em;
+        font-family: FavoritPro;
+        color: #fff;
+        width: 100%;
+        font-size: 2.2rem;
+        padding: 5em .5em 0em .5em;
+    }
+
+    .mainHeaderRectangle {
+        display: block;
+        margin-top: 1.5em;
+        background: #44FBA3;
+        justify-content: space-between;
+        padding: 2em 0;
+    }
+
+    .headerRectangle {
+        display: flex;
+        align-items: center;
+        margin-left: .6em;
+    }
+
+    .rectangleNumber {
+        font-size: 3.5rem;
+    }
+
+    .rectangleTitle {
+        margin-left: 1em;
+        font-size: 1.3rem;
+        font-family: Werena;
+    }
+
+    .headerArrow {
+        margin-top: 1.5em;
+        padding-bottom: 1.5em;
+        display: block;
+        text-align: center;
+    }
+
+    /* CONTENT CONTAINER */
+    #contentContainer {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* MAIN SIDEBAR */
+    #sidebar {
+        display: none;
+        
+    }
+
+    /* MAIN CONTENT*/
+    #mainContent {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+
+    #text {
+        background: #fff;
+        padding: 0 1em 8em 1em;
+        overflow: auto;
+    }
+
+    .mainButtonContainer {
+        float: none;
+        display: none;
+    }
+
+    .textContent {
+        display: block;
+        padding: 6em 0 0 0;
+    }
+
+    .textContentTitle {
+        color: black;
+        width: 100%;
+        font-family: FavoritPro;
+        font-size: 2.4rem;
+    }
+
+    .textDescription > a {
+        color: #0047FF;
+        text-decoration: none;
+    }
+
+    .textDescription {
+        margin-top: 1.5em;
+        font-family: FavoritProLight;
+        font-size: 1rem;
+        width: 100%;
+        line-height: 1.4;
+    }
+
+    .textContentTitleMini {
+        color: black;
+        width: 100%;
+        font-family: FavoritPro;
+        font-size: 1.5rem;
+        margin-top: 1.5em;
+    }
+    /* CASE */
+
+    #case {
+        background: #F4E4ED;
+        padding: 0 1em 8em 1em;
+        overflow: auto;
+    }
+    
+    .mainCaseContainer {
+        display: block;
+        width: 100%;
+    }
+    
+    .mainCaseContainer > a {
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    .caseBlock:nth-child(2) {
+        float: none;
+        display: block;
+    }
+    
+    .caseBlock {
+        display: inline-block;
+        margin-top: 30px;
+    }
+    
+    .caseBlockBackground {
+        display: block;
+        background: #C4C4C4;
+        width: 100%;
+        height: 20em;
+    }
+    
+    .caseBlockTitle {
+        display: block;
+        margin-top: 1em;
+        color: black;
+        width: 80%;
+        font-family: FavoritPro;
+        font-size: 1.5rem;
+    }
+}
+
+
